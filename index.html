@@ -6,25 +6,25 @@
   <meta name="robots" content="index,follow" />
   <!-- Title -->
   <title></title>
+
   <!-- Style -->
-  <link href="http://insanen.com/plugins/Litabs/css/style.css" rel="stylesheet" />
-  <link rel="stylesheet" media="only screen and (max-width: 400px)" href="http://insanen.com/plugins/Litabs/css/mobile.css" />
-  <!-- Script -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" media="only screen and (max-width: 400px)" href="https://raw.githubusercontent.com/misterzik/Litabs/master/src/litabs-mobile.min.css" />
+
   <!-- Load Tabs -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="http://insanen.com/plugins/Litabs/js/jquery.litabs.js"></script>
+  <script src="https://raw.githubusercontent.com/misterzik/Litabs/master/src/litabs.min.js"></script>
 
-<!-- Call Back Header -->
-<link href="http://insanen.com/plugins/Litabs/css/tabs.css" rel="stylesheet" />
+  <!-- Call Back Header -->
+  <link href="https://raw.githubusercontent.com/misterzik/Litabs/master/src/litabs.min.css" rel="stylesheet" />
 
-  <!-- Page Unique Scripts & Styles --> 
+  <!-- Page Unique Scripts & Styles -->
 
   <style>
     body { font-family: Arial, Helvetica, Sans-Serif; font-size: 80%; margin-left: auto;margin-right: auto;display: block;}
     h2 { margin:0; padding:0; }
   </style>
-    
+
 </head>
 <!--end-->
 
@@ -39,6 +39,19 @@
 
 <h1> LiTabs </h1>
 
+<!-- Navigation -->
+<div id="nav">
+
+
+	<ul>
+		<a href="index.html">Home</a>
+		<a href="template.html">Theme's</a>
+		<a href="https://github.com/misterzik/Litabs" target="_blank">GitHub Site</a>
+		<a href="http://insanen.com" target="_blank">Official Site</a>
+	</ul>
+
+</div>
+<!-- End Navigation -->
 
 
 <!-- tabs wrapp -->
@@ -49,39 +62,51 @@
         <li><a href="#tab-2"> Tab Second</a></li>
         <li><a href="#tab-3"> Tab Third</a></li>
         <!-- ajax call -->
-        <li><a href="http://insanen.com/plugins/Litabs/assets/pages/templates.htm" data-fragment="#small-print"> Tab Fourth</a></li>
+        <li><a href="pages/templates.htm" data-fragment="#small-print"> Tab Fourth</a></li>
+        <li><a href="pages/BrokenLink.htm" data-fragment="#small-print"> Error Tab</a></li>
     </ul>
 
     <!-- First Tab Content -->
     <div class="tab-content" id="tab-1">
         <h2>Here is, our Title</h2>
         <p align="left">
-          
-          <img src="http://insanen.com/plugins/Litabs/img/geek.jpg" style="width: 450px;height: 350px;margin-left: -16px;">
-     
+
+          <img src="img/geek.jpg" style="width: 450px;height: 350px;margin-left: -16px;">
+
+
         </p>
     </div>
 
-   <!-- Second Tab Content -->   
+   <!-- Second Tab Content -->
    <div class="tab-content" id="tab-2">
         <h2>Here is, our  Second Title</h2>
-        <p align="left">
-          
-          <img src="http://insanen.com/plugins/Litabs/img/geek-logo.png" style="width: 250px;height: 250px;margin-left: 7em;">
-     
-        </p>        
+        <p>
+
+          <img src="img/geek-logo.png" style="  width: 250px;height: 250px;margin-right: 2px;">
+
+          <br />
+          <br />
+
+          We can also Add Regular HTML/CSS to our page tab.
+
+        </p>
     </div>
 
 
 
     <div class="tab-content" id="tab-3">
         <h2>Here is, our Third Title</h2>
-  
+
   <div class="" align="left">
             <p>
 
-            <img src="http://insanen.com/plugins/Litabs/img/jquery.png" style="width: 450px;height: 250px;margin-left: -1em;">
-     
+            <img src="img/jquery.png" style="width: 450px;height: 250px;margin-left: -1em;">
+
+          <br />
+          <br />
+
+          Isn't it AWesome, We dont need to reload the page to change sections!<br />
+          Which means LESS loading time!
 
             </p>
   </div>
@@ -89,6 +114,14 @@
     </div>
     <!-- via Ajax -->
 </div>
+
+
+<br />
+
+<a href="https://github.com/misterzik/Litabs/archive/v1.0.1.zip" class="myDownload">Download Now ZIP</a>
+
+
+<a href="#" class="myDownload2">Download Now RAR</a>
 
 <br /><br />
 
