@@ -1,0 +1,17 @@
+{
+  "name": "LiTabs",
+  "version": "1.0.1",
+  "main": ["src/litabs.min.js", "src/litabs.min.css"],
+  "description": "LiTabs is super light-weight Tab Maker",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt",
+    ".gitignore",
+    "node_modules/**",
+    "css/*",
+    "js/*",
+  ],
+  "dependencies": {
+    "jquery": "latest"
+  }
+}
