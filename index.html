@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Litabs : Light-Weigh Tabs for geeks. See you soon!">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <title>Litabs</title>
+    <title>Litabs by misterzik</title>
   </head>
 
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/misterzik/Litabs">View on GitHub</a>
+    <header>
+      <div class="container">
+        <h1>Litabs</h1>
+        <h2>Light-Weigh Tabs for geeks. See you soon!</h2>
 
-          <h1 id="project_title">Litabs</h1>
-          <h2 id="project_tagline">Light-Weigh Tabs for geeks. See you soon!</h2>
+        <section id="downloads">
+          <a href="https://github.com/misterzik/Litabs/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/misterzik/Litabs/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/misterzik/Litabs" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/misterzik/Litabs/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/misterzik/Litabs/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+    <div class="container">
+      <section id="main_content">
         <h3>
 <a id="welcome-to-ltabs" class="anchor" href="#welcome-to-ltabs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to L!Tabs.</h3>
 
@@ -41,13 +38,14 @@
 
 <p>We’ve two templates included with this script, classic view, and a modern blue skin view, depending on your taste. To switch through skins please add the proper css called.</p>
 
-<p>For a classic skin use; <code>&lt;link href="css/litabs.min.css" rel="stylesheet" /&gt;</code>
-For a modern skin feel use; <code>&lt;link href="css/litabs-modern.min.css" rel="stylesheet" /&gt;</code></p>
+<p>For a classic skin use; <code>&lt;link href="css/litabs.min.css" rel="stylesheet" /&gt;</code></p>
+
+<p>For a modern skin feel use; <code>&lt;link href="css/litabs-modern.min.css" rel="stylesheet" /&gt;</code></p>
 
 <p>To avoid platform problems always include; <code>&lt;link rel="stylesheet" media="only screen and (max-width: 400px)" href="css/litabs-mobile.css" /&gt;</code></p>
 
 <h3>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h3>
+<a id="installation--usage" class="anchor" href="#installation--usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation &amp; Usage</h3>
 
 <ol>
 <li>Download source code and copy from <code>src</code> to your project folder.</li>
@@ -57,11 +55,78 @@ For a modern skin feel use; <code>&lt;link href="css/litabs-modern.min.css" rel=
 <pre><code>&lt;link href="src/litabs.min.css" rel="stylesheet" /&gt;
 &lt;link rel="stylesheet" media="only screen and (max-width: 400px)" href="css/litabs-mobile.css" /&gt;
 &lt;script src="src/litabs.min.js"&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    $(function() { $(".tabs").Litabs(); });
+&lt;/script&gt;
 </code></pre>
 
 <ol>
 <li>Use Html Markdown to show your new tabs. We implement them with Ajax call to make this more fun.</li>
 </ol>
+
+<pre><code>&lt;!-- tabs wrapp --&gt;
+&lt;div class="tabs"&gt;
+    &lt;!-- tabs menu top --&gt;
+    &lt;ul class="tab-menu"&gt;
+        &lt;li&gt;&lt;a href="#tab-1"&gt; Tab&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#tab-2"&gt; Tab Second&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#tab-3"&gt; Tab Third&lt;/a&gt;&lt;/li&gt;
+        &lt;!-- ajax call --&gt;
+        &lt;li&gt;&lt;a href="pages/templates.htm" data-fragment="#small-print"&gt; Tab Fourth&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="pages/BrokenLink.htm" data-fragment="#small-print"&gt; Error Tab&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;!-- First Tab Content --&gt;
+    &lt;div class="tab-content" id="tab-1"&gt;
+        &lt;h2&gt;Here is, our Title&lt;/h2&gt;
+        &lt;p align="left"&gt;
+
+          &lt;img src="img/geek.jpg" style="width: 450px;height: 350px;margin-left: -16px;"&gt;
+
+
+        &lt;/p&gt;
+    &lt;/div&gt;
+
+   &lt;!-- Second Tab Content --&gt;
+   &lt;div class="tab-content" id="tab-2"&gt;
+        &lt;h2&gt;Here is, our  Second Title&lt;/h2&gt;
+        &lt;p&gt;
+
+          &lt;img src="img/geek-logo.png" style="  width: 250px;height: 250px;margin-right: 2px;"&gt;
+
+          &lt;br /&gt;
+          &lt;br /&gt;
+
+          We can also Add Regular HTML/CSS to our page tab.
+
+        &lt;/p&gt;
+    &lt;/div&gt;
+
+
+
+    &lt;div class="tab-content" id="tab-3"&gt;
+        &lt;h2&gt;Here is, our Third Title&lt;/h2&gt;
+
+  &lt;div class="" align="left"&gt;
+            &lt;p&gt;
+
+            &lt;img src="img/jquery.png" style="width: 450px;height: 250px;margin-left: -1em;"&gt;
+
+          &lt;br /&gt;
+          &lt;br /&gt;
+
+          Isn't it AWesome, We dont need to reload the page to change sections!&lt;br /&gt;
+          Which means LESS loading time!
+
+            &lt;/p&gt;
+  &lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;!-- via Ajax --&gt;
+&lt;/div&gt;
+
+</code></pre>
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
@@ -70,15 +135,6 @@ For a modern skin feel use; <code>&lt;link href="css/litabs-modern.min.css" rel=
       </section>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Litabs maintained by <a href="https://github.com/misterzik">misterzik</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
     
-
   </body>
 </html>
